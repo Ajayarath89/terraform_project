@@ -22,12 +22,3 @@ module "ec2_instance" {
     Environment = "dev"
   }
 }
-
-terraform {
-  backend "s3" {
-    encrypt = true
-    bucket = "my-terraform-state-s3test"
-    region = "us-east-1"
-    key = "terraform-state/terraform.tfstate"
-  }
-}
