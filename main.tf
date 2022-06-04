@@ -9,12 +9,12 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-0022f774911c1d690"
+  ami                    = "ami-0c6120f461d6b39e9"
   instance_type          = "t2.micro"
   key_name               = "terraform"
   monitoring             = true
-  vpc_security_group_ids = ["sg-020d448c9c2494131"]
-  subnet_id              = "subnet-09944b8728c9c3b55"
+  vpc_security_group_ids = ["sg-0dd290bf175c8d27f"]
+  subnet_id              = "subnet-026c58f1c05a1b7db"
   
   tags = {
     Name = "terraform-instance"
