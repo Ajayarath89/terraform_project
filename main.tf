@@ -11,7 +11,7 @@ module "ec2_instance" {
 
   ami                    = "ami-0c6120f461d6b39e9"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "projecttest"
   monitoring             = true
   vpc_security_group_ids = ["sg-0dd290bf175c8d27f"]
   subnet_id              = "subnet-026c58f1c05a1b7db"
