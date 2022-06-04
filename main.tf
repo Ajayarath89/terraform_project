@@ -1,7 +1,8 @@
 provider "aws" {
-  region = "ap-southeast-2"
+  region     = "us-west-2"
+  access_key = "AKIAWDYIBURFBOKGH73Q"
+  secret_key = "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"
 }
-
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
